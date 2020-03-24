@@ -5,7 +5,7 @@ Set Up
 - Reference the `AppContainer` component in App.js
 
 - Create a class based component called `DeveloperQuotes`
-- Display a the quote and author of developer quotes films from this api : https://programming-quotes-api.herokuapp.com/quotes 
+- Display the quote and author of developer quotes from this api : https://programming-quotes-api.herokuapp.com/quotes 
 
 Using Routes
 - Install react-router-dom using this command in the terminal INSIDE your react app : `npm install react-router-dom`

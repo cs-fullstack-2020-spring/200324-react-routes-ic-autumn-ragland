@@ -3,22 +3,25 @@ import { Fragment } from 'react';
 class DeveloperQuotes extends Component {
     constructor(props) {
         super(props);
+        // set initial state
         this.state = {
-            quoteList: [],
+            quoteList: [], // array to store data from fetch
         }
     }
-
+    // lifecycle method to call fetch
     componentDidMount() {
         this.loadData();
     }
-
+    // fetch using async await
     loadData = async () => {
+        // fetch from api
         const res = await fetch('https://programming-quotes-api.herokuapp.com/quotes');
+        // save json data only
         const data = await res.json();
+        // console.table(data); // check json data
         this.setState({ quoteList: data });
-        console.table(data);
     }
-
+    // display quote and author from fetch
     render() {
         return (
             <Fragment>
